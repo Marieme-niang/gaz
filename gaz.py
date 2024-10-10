@@ -79,11 +79,7 @@ r2 = r2_score(y, predictions)
 st.title('Estimation volume de Gas')
 
 # Tracer la courbe de régression avec seaborn (optionnel)
-plt.figure(figsize=(10, 6))
 sns.regplot(x='MQ2', y='Gas_encoded', data=df, scatter_kws={'color': 'blue'}, line_kws={'color': 'red'})
-plt.title('Courbe Linéaire entre MQ2 et Measurement avec Seaborn')
-plt.xlabel('MQ2')
-plt.ylabel('Measurement')
 st.pyplot(plt)
 
 # Titre du tableau de bord
